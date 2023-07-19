@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My library</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h2> My library </h2>
+    </div>
+    <body>
+        <section class="first">
+        <div id="add-book">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="author">Author</label>
+                <input type="text" id="name" name="author" required>
+            </div>
+
+            <div>
+                <label for="status">Status</label>
+                <select id="status" name="status">
+                    <option value="read">Read</option>
+                    <option value="not-read" selected>Not read</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="rating">Your rating (on scale 10)</label>
+                <input type="number" id="rating" name="rating" required min="0" max="10" placeholder="On scale of 10" value="0">
+                
+            </div>
+
+          
+            <textarea rows="20" cols="50" class="review" placeholder="Your reviews and notes..."></textarea>
+           
+            <div class="buttons">
+           <button class="submit">Submit</button>
+           <button class="clear">Clear</button>
+            </div>
+        </div>
+    </section>
+
+    <section  class="second">
+        <div id="display">
+            <div class="title">
+                <h4>Name</h4>
+                <h4>Author</h4>
+                <h4>Status</h4>
+                <h4>Your rating</h4>
+                <h4>Review & Notes</h4>
+            </div>
+            <hr>
+
+        </div>
+    </section>
+           
+        
+    </body>
+    <footer>
+        Library -- Theodinproject -- by Nguyen Minh Triet
+    </footer>
+</body>
+</html>
